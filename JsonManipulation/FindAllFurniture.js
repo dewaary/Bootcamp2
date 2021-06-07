@@ -2,11 +2,11 @@
 
 const data = require('./data.json');
 
-const FindAllElectronic = (findElectronic) => {
+const FindAllFurniture = (findFurniture) => {
     let dataBulk = [];
     for(let i in data) {
         let dataJson = data[i];
-        if(dataJson.type == "electronic") {
+        if(dataJson.type == "furniture") {
             let resp = {
                 inventory:dataJson.inventory_id,
                 name:dataJson.name,
@@ -22,4 +22,4 @@ const FindAllElectronic = (findElectronic) => {
     return true;
 }
 
-console.log(FindAllElectronic());
+console.log(FindAllFurniture());
