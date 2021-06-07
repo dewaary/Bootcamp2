@@ -10,8 +10,6 @@ const FindData = (findMeetingRoom) => {
             let resp = {
                 nameRoom:dataJson.placement.name,
                 nameItem:dataJson.name,
-                nameType:dataJson.type,
-                nameTags:dataJson.tags,
             }
             dataBulk.push(resp);
         }        
